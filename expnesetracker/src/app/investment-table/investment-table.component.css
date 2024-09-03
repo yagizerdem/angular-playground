@@ -1,0 +1,9 @@
+.placeholder_ {
+  margin-top: 50px;
+  text-align: center;
+}
+table {
+  width: 800px;
+  height: fit-content;
+  margin: 50px auto;
+}

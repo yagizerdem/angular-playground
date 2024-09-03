@@ -1,0 +1,25 @@
+@if(results.length <= 0){
+<p class="placeholder_">enter investment data ...</p>
+}
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Year</th>
+      <th scope="col">Investment Value</th>
+      <th scope="col">Interest Year</th>
+      <th scope="col">Total Interest</th>
+      <th scope="col">Invested Capital</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (result of results; track result.year;) {
+    <tr>
+      <td>{{ result.year }}</td>
+      <td>{{ result.valueEndOfYear }}</td>
+      <td>{{ result.interest }}</td>
+      <td>{{ result.totalAmountInvested }}</td>
+      <td>{{ result.annualInvestment }}</td>
+    </tr>
+    }
+  </tbody>
+</table>
